@@ -40,17 +40,45 @@ body {
   cursor: pointer;
 }
 
-.hero {
-  text-align: center;
+.yana-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
   padding: 6rem 2rem;
-  max-width: 900px;
-  margin: auto;
+  background: linear-gradient(180deg, #eef2ff 0%, #f9fafb 70%);
+  border-radius: 0 0 3rem 3rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  line-height: 1.2;
+.hero-content {
+  max-width: 600px;
 }
+
+.yana-hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.yana-hero .subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-top: 1.5rem;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .yana-hero {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    padding: 7rem 4rem;
+  }
+}
+
 
 .subtitle {
   font-size: 1.2rem;
