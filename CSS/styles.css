@@ -94,31 +94,40 @@ body {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
+
 .store-buttons {
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .btn-store {
   background: #111827;
   color: #ffffff;
-  border: none;
-  padding: 0.75rem 1.6rem;
-  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.7rem 1.4rem;
+  border-radius: 14px;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 0.2px;
+  box-shadow: 0 16px 32px rgba(17, 24, 39, 0.25);
 }
 
 .btn-store:hover {
   background: #1f2937;
+  transform: translateY(-1px);
 }
 
+@media (max-width: 899px) {
+  .hero-buttons,
+  .store-buttons {
+    justify-content: center;
+  }
+}
 /* SECCIONES */
 .section {
   padding: 5rem 2rem;
