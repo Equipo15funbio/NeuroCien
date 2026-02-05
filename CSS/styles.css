@@ -96,6 +96,28 @@ body {
   gap: 1rem;
   justify-content: center;
 }
+.store-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-store {
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.btn-store:hover {
+  background: #1f2937;
+}
 
 /* SECCIONES */
 .section {
