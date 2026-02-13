@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --header-bg: #000f29;
+}
 
 body {
   margin: 0;
