@@ -45,7 +45,7 @@ body {
   grid-template-columns: 1fr;
   gap: 3rem;
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #eef2ff 0%, #f9fafb 70%);
+  background: linear-gradient(180deg, #000F29 0%, #f9fafb 70%);
   border-radius: 0 0 3rem 3rem;
 }
 
