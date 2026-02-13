@@ -137,6 +137,7 @@ body {
   padding: 5rem 2rem;
   max-width: 900px;
   margin: auto;
+  color: #111827;
 }
 
 .section.light {
@@ -218,5 +219,5 @@ body {
 
 .small {
   margin-top: 1rem;
-  color: #6b7280;
+  color: #d1d5db
 }
