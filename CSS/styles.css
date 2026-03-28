@@ -243,6 +243,10 @@ body {
   z-index: 999;
 }
 
+.survey-modal.hidden {
+  display: none;
+}
+
 .survey-modal__panel {
   width: min(560px, 100%);
   background: #ffffff;
