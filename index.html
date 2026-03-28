@@ -13,7 +13,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="logo">NeuroCien</div>
-    <button class="btn-primary">Empezar</button>
+    <button class="btn-primary" data-open-survey>Empezar</button>
   </header>
 
   <!-- HERO -->
@@ -31,7 +31,7 @@
     </p>
 
     <div class="hero-buttons">
-      <button class="btn-primary">Empezar ahora</button>
+      <button class="btn-primary" data-open-survey>Empezar ahora</button>
       <button class="btn-secondary">Cómo funciona</button>
     </div>
     
@@ -129,9 +129,38 @@
   <!-- CTA FINAL -->
   <section class="cta">
     <h2>Empezar a cuidarte no debería ser difícil.</h2>
-    <button class="btn-primary large">Empezar ahora</button>
+    <button class="btn-primary large">Empezar ahora</button<button class="btn-primary large" data-open-survey>Empezar ahora</button>>
     <p class="small">Confidencial · A tu ritmo · Sin juicios</p>
   </section>
+  <div class="survey-modal hidden" id="surveyModal" role="dialog" aria-modal="true" aria-labelledby="surveyTitle">
+    <div class="survey-modal__panel">
+      <button class="survey-modal__close" type="button" id="closeSurveyModal" aria-label="Cerrar ventana">✕</button>
+      <h2 id="surveyTitle">Encuesta NeuroCien</h2>
+      <p>Esta será la nueva ventana superpuesta para iniciar la encuesta.</p>
+    </div>
+  </div>
+
+  <script>
+    const surveyModal = document.getElementById("surveyModal");
+    const openSurveyButtons = document.querySelectorAll("[data-open-survey]");
+    const closeSurveyModalButton = document.getElementById("closeSurveyModal");
+
+    openSurveyButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        surveyModal.classList.remove("hidden");
+      });
+    });
+
+    closeSurveyModalButton.addEventListener("click", () => {
+      surveyModal.classList.add("hidden");
+    });
+
+    surveyModal.addEventListener("click", (event) => {
+      if (event.target === surveyModal) {
+        surveyModal.classList.add("hidden");
+      }
+    });
+  </script>
 
 </body>
 </html>
