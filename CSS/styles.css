@@ -150,12 +150,18 @@ body {
   background: #f8fafc;
   color: #0f172a
   border-radius: 1.5rem;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+  border: 1px solid #dbe3ee;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+}
+
+.section.light h2,
+.section.light p,
+.section.light strong {
+  color: #0b1220;
 }
 
 .section.light .quote {
-  color: #334155;
+  color: #1e293b;
 }
 
 .section h2 {
